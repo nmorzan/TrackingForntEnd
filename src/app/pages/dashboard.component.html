@@ -1,0 +1,85 @@
+<div class="wrapper">
+    <div class="conteiner">
+        <aside class="aside menuOn">
+            <i class="fas fa-bars fa-2x btn__menu btnMenuOn" (click)="viewMenu()"></i>
+            <div class="infoUser">
+                <img src="../../assets/images/User2.jpg" alt="ImagUser" class="img_user menuOn__Op">
+                <h3 class="name_user menuOn__Op" >Nicolas Morzan</h3>
+            </div>
+            <ul class="menu_principal">
+                <li class="item_menu">
+                    <a href="#" class="link_menu">
+                        <div class="item_conteiner">
+                            <i class="fas fa-home "></i><h4 class="titleOn">Home</h4>
+                        </div> 
+                    </a>
+                </li>
+                <li class="item_menu">
+                    <a href="#" class="link_menu">
+                        <div class="item_conteiner">
+                            <i class="fas fa-tractor"></i><h4 class="titleOn">Campos</h4>
+                        </div> 
+                    </a>
+                </li>
+                <li class="item_menu act_sub_menu" (click)="getSubMenu()">
+                    <a class="link_menu">
+                        <div class="item_conteiner">
+                            <i class="fas fa-layer-group"></i>
+                            <h4 class="titleOn">Tracking</h4>
+                            <i class="fas fa-arrow-down i_sub_menu"></i>
+                        </div> 
+                    </a>
+                </li>
+                    <ul class="sub_menu displ_off">
+                        <li class="item_sub_menu">
+                            <a href="#" class="link_sub_menu">
+                                <div class="item_conteiner_sub_menu">
+                                    <i class="fab fa-cotton-bureau"></i><h4 class="titleOn">Fase I</h4>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="item_sub_menu">
+                            <a href="#" class="link_sub_menu">
+                                <div class="item_conteiner_sub_menu">
+                                    <i class="fas fa-truck-moving"></i><h4 class="titleOn">Fase II</h4>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="item_sub_menu">
+                            <a href="#" class="link_sub_menu">
+                                <div class="item_conteiner_sub_menu">
+                                    <i class="fas fa-industry"></i><h4 class="titleOn">Fase III</h4>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="item_sub_menu">
+                            <a href="#" class="link_sub_menu">
+                                <div class="item_conteiner_sub_menu">
+                                    <i class="fas fa-flask"></i><h4 class="titleOn">Fase IV</h4>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                <li class="item_menu">
+                    <a href="#" class="link_menu">
+                        <div class="item_conteiner">
+                            <i class="fas fa-user-cog"></i><h4 class="titleOn">Configuraciones</h4>
+                        </div> 
+                    </a>
+                </li>
+            </ul>
+        </aside>
+        <header class="header menuOn-2">
+            <h2>Home</h2>
+        </header>
+        <div class="dashboard menuOn-2">
+            <div class="home-component">
+                <router-outlet></router-outlet>
+            </div>
+        </div>
+        <footer class="footer menuOn-2">
+            <h2>footer</h2>
+        </footer>
+    </div>
+</div>
+

@@ -1,0 +1,193 @@
+
+.conteiner{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    margin: auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    font-family: 'Kaisei Opti', serif;
+}
+
+/* header */
+.conteiner .header{
+    background-color: rgb(131, 139, 139);
+    grid-column-start: 2;
+    grid-column-end: 3;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.1s ease-in-out;
+}
+/* aside */
+.conteiner .aside{
+    background-color: rgb(198, 195, 207);
+    grid-row: span 3;
+    transition: 0.1s ease-in-out;
+    border-right: 1px solid black;
+}
+    .btn__menu{
+
+        position:absolute;
+        top: 15px;
+        cursor: pointer;
+        transition: 0.1s ease-in-out;
+        z-index: 99;
+    }
+
+    .infoUser{
+        width: 100%;
+        height: 10vh;
+        border-bottom: 1px solid black;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 10px;
+    }
+
+        .infoUser .img_user{
+            width: 40px;
+            border-radius: 100%;
+            margin-right: 10px;
+            transition: 0.1s ease-in-out;
+        }
+        .infoUser h3{
+            font-size: 15px;
+        }
+    
+    .menu_principal{
+        width: 100%;
+    }
+
+        .menu_principal .item_menu{
+            list-style: none;
+            padding: 10px;
+            cursor: pointer;
+            border-bottom: 1px solid oldlace;
+            transition: 0.1s ease-in-out;
+        }
+
+        .menu_principal .item_menu:hover{
+            background-color: oldlace;
+            transition: 0.1s ease-in-out;
+        }
+            .menu_principal .item_menu a {
+                color: black;
+                text-decoration: none;
+            }
+
+                .item_conteiner{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                }
+                    .item_conteiner i{
+                        margin-right: 10px;
+                        width: 30px;
+                    }
+                    .item_conteiner h4{
+                        font-size: 13px;
+                    }
+                    
+                    .item_conteiner .i_sub_menu{
+                        margin-left: 90px;
+                    }
+        .sub_menu{
+            width: 100%;
+        }
+            .sub_menu .item_sub_menu{
+                list-style: none;
+                padding: 10px;
+                cursor: pointer;
+                border-bottom: 1px solid oldlace;
+                transition: 0.1s ease-in-out;
+                font-size: 13px;
+            }
+
+            .sub_menu .item_sub_menu:hover{
+                background-color: oldlace;
+                transition: 0.1s ease-in-out;
+            }
+                .sub_menu .item_sub_menu a {
+                    color: black;
+                    text-decoration: none;
+                }
+
+                    .item_conteiner_sub_menu{
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                    }
+                        .item_conteiner_sub_menu i{
+                            width: 30px;
+                            margin: 0px 10px 0px 10px
+                        }
+
+/* dashboard */
+.conteiner .dashboard{
+    background-color: rgb(255, 255, 255);
+    height: 87vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.1s ease-in-out;
+    padding: 10px;
+}
+
+    .conteiner .dashboard .home-component{
+        width: 100%;
+        height: 100%;
+        border: 1px solid rgb(148, 143, 143);
+    }
+/* footer */
+.conteiner .footer{
+    background-color: rgb(196, 192, 192);
+    height: 6vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.1s ease-in-out;
+}
+
+/* clases para dashboard adaptable*/
+.menuOn{
+    width: 250px;
+}
+.menuOff{
+    width: 50px;
+}
+.menuOn-2{
+    width: calc(100vw - 250px);
+}
+.menuOff-2{
+    width: calc(100vw - 50px);
+}
+.btnMenuOn{
+    left: 210px;
+}
+.btnMenuOff{
+    left: 10px;
+}
+.menuOn__Op{
+    opacity: 1;
+}
+.menuOff__Op{
+    opacity: 0;
+}
+
+.titleOn{
+    display: block;
+}
+
+.titleOff{
+    display: none;
+}
+
+/* clases sub-Menu*/
+.displ_on{
+    display: block;
+}
+.displ_off{
+    display: none;
+}

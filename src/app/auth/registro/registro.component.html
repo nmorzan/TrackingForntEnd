@@ -1,0 +1,47 @@
+<div class="wrapper">
+    <div class="conteiner">
+        <div class="data-title">
+            <h1>Rellene los siguientes campos:</h1>
+        </div>
+        <hr>
+        <div class="data-register">
+            <form action="#">
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" placeholder="ingrese su nombre" required>
+    
+                <label for="apellido">Apellido:</label>
+                <input type="text" name="apellido" placeholder="ingrese su apellido" required>
+    
+                <label for="usuario">Email:</label>
+                <input type="email" name="usuario" placeholder="ingrese su email" required>
+    
+                <label for="Empresa">Empresa:</label>
+                <input type="text" name="Empresa" placeholder="ingrese el nombre de su empresa" required>
+    
+                <label >Provincia:</label>
+                <select class="selectProv" #txtSelect (change)="obtenerLocalidades(txtSelect.value)">
+                    <option *ngFor="let provincia of provincias">{{provincia.nombre}}</option>
+                </select>
+    
+                <label >Localidad:</label>
+                <select>
+                    <option *ngFor="let localidad of localidades">{{localidad.nombre}}</option>
+                </select>
+                
+                <label for="password">Contraseña:</label>
+                <input type="password" name="password" placeholder="ingrese su password" required>
+    
+                <label for="repassword">Repetir contraseña:</label>
+                <input type="password" name="repassword" placeholder="repetir contraseña" required>
+    
+                <div class="buttons">
+                    <button class="btn_Ingreso" type="submit" routerLink="/dashboard">REGISTRARSE</button>
+                    <a routerLink="/login">VOLVER</a>
+                </div>
+    
+            </form>
+        </div>
+    
+    </div>
+</div>
+

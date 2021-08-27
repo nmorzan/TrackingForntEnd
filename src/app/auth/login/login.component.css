@@ -1,0 +1,228 @@
+
+.wrapper{
+    background-image: url(../../../assets/images/algodon-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end;
+    font-family: 'Kaisei Opti', serif;
+}
+hr{
+    color: black;
+    width: 100%;
+}
+
+    .conteiner{
+        width: 38%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content: flex-start;
+        background-color: rgb(245, 214, 175);
+        padding: 10px;
+        box-shadow: 5px 5px 5px 5px black;
+    }
+        .data-title{
+            height: 15vh;
+        }
+            .data-title h1{
+                margin:10px 0px 10px 0px;
+                text-align: center;
+            }
+
+        .data-login{
+            height: 55vh;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+            .data-login h2{
+                margin: 0px 0px 5px 0px;
+                text-align: center;
+            }
+
+            .data-login form{
+                display: flex;
+                flex-direction: column;
+                width: 70%;
+            }
+                .data-login form label{
+                    padding: 5px 0px 5px 0px;
+                }
+
+                .data-login form input[type="email"],input[type="password"]{
+                    padding: 5px;
+                    font-size: 15px;
+                }
+
+                .data-login form .data-user{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 5px 0px 10px 0px;
+                }
+                    .data-login form .data-user .checkbox{
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                    }
+
+                        .checkbox label{
+                            margin-left: 10px;
+                        }
+
+                        .checkbox input[type="checkbox"]{
+                            width: 17px;
+                            height: 17px;
+                        }
+                        .data-login form .data-user a{
+                            color: black;
+                        }
+
+                .data-login form .btn_Ingreso{
+                    width: 35%;
+                    margin: auto;
+                    padding: 5px;
+                    font-size: 13px;
+                    border-radius: 5px;
+                    margin-bottom: 10px;
+                    font-weight: 600;
+                    cursor: pointer;
+                    background-color: rgb(165, 130, 65);
+                }
+
+                .data-login form .btn_Ingreso:hover{
+                    box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.4);
+                }
+
+        .data-register{
+            height: 15vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 70%;
+        }
+
+            .data-register button{
+                padding: 5px;
+                width: 35%;
+                font-size: 13px;
+                border-radius: 5px;
+                margin-top: 10px;
+                font-weight: 600;
+                cursor: pointer;
+                background-color: rgb(165, 130, 65);
+            }
+
+            .data-register button:hover{
+                box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.4);
+            }
+
+        .data-info{
+            height: 15vh;
+            width: 100%;
+        }
+            .data-info h2{
+                text-align: center;
+            }
+            .data-info ul{
+                margin-top: 10px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+                .data-info ul li{
+                    list-style: none;
+                    margin-top: 5px;
+                }
+                    .data-info ul li a{
+                        color: black;
+                        font-weight: 600;
+                    }
+
+@media (max-width: 1400px) {
+    .data-title{
+        height: 20vh;
+    }
+        .data-title h1{
+            font-size: 25px;
+            margin:10px 0px 10px 0px;
+            text-align: center;
+        }
+    .data-login{
+        height: 45vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .data-login form .data-user a{
+        color: black;
+        font-size: 12px;
+    }
+
+    .data-info h2{
+        text-align: center;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .conteiner{
+        width: 55%;
+    }
+
+            .data-title h1{
+                font-size: 21px;
+                margin:10px 0px 10px 0px;
+                text-align: center;
+            }
+
+        .data-register{
+            height: 15vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 80%;
+        }
+        .data-login form{
+            width: 80%;
+        }
+            .checkbox label{
+                font-size: 12px;
+                margin-left: 10px;
+            }
+
+            .data-register h2{
+               font-size: 20px;
+            }
+            
+        .data-info{
+            width: 100%;
+        }        
+            .data-info h2{
+                font-size: 19px;
+            }
+}
+
+@media (max-width: 600px) {
+    body{
+        background: none;
+    }
+
+        .conteiner{
+            width: 100%;
+        }
+}
