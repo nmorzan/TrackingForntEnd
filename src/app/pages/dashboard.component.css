@@ -20,6 +20,12 @@
     justify-content: center;
     transition: 0.1s ease-in-out;
 }
+
+.conteiner .logout{
+    position: absolute;
+    right: 15px;
+    cursor: pointer;
+}
 /* aside */
 .conteiner .aside{
     background-color: rgb(198, 195, 207);
@@ -27,6 +33,7 @@
     transition: 0.1s ease-in-out;
     border-right: 1px solid black;
 }
+
     .btn__menu{
 
         position:absolute;
@@ -62,13 +69,15 @@
 
         .menu_principal .item_menu{
             list-style: none;
-            padding: 10px;
             cursor: pointer;
-            border-bottom: 1px solid oldlace;
-            transition: 0.1s ease-in-out;
-        }
 
-        .menu_principal .item_menu:hover{
+        }
+        .menu_principal .item_menu .item_conteiner{
+            padding: 10px;
+            transition: 0.1s ease-in-out;
+            border-bottom: 1px solid oldlace;
+        }
+        .menu_principal .item_menu div:hover{
             background-color: oldlace;
             transition: 0.1s ease-in-out;
         }
@@ -83,15 +92,15 @@
                     align-items: center;
                 }
                     .item_conteiner i{
-                        margin-right: 10px;
                         width: 30px;
                     }
                     .item_conteiner h4{
                         font-size: 13px;
+                        width: 100px;
                     }
                     
                     .item_conteiner .i_sub_menu{
-                        margin-left: 90px;
+                        margin-left: 60px;
                     }
         .sub_menu{
             width: 100%;
@@ -103,6 +112,7 @@
                 border-bottom: 1px solid oldlace;
                 transition: 0.1s ease-in-out;
                 font-size: 13px;
+                z-index: 99;
             }
 
             .sub_menu .item_sub_menu:hover{
@@ -124,6 +134,13 @@
                             margin: 0px 10px 0px 10px
                         }
 
+/* routerlink active*/
+.active{
+    background-color: aliceblue;
+}
+.inactive{
+    background-color: rgb(198, 195, 207);
+}
 /* dashboard */
 .conteiner .dashboard{
     background-color: rgb(255, 255, 255);
@@ -138,7 +155,6 @@
     .conteiner .dashboard .home-component{
         width: 100%;
         height: 100%;
-        border: 1px solid rgb(148, 143, 143);
     }
 /* footer */
 .conteiner .footer{

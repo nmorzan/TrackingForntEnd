@@ -1,1 +1,47 @@
-<p>campos works!</p>
+<section class="conteiner">
+    <table class="table">
+      <thead>
+       <tr class="table__head">
+         <!-- 
+    <th (click)="cambiarOrden()">nombre
+            <i class="fa fa-arrow-up" *ngIf="orden === 0"></i>
+            <i class="fa fa-arrow-down" *ngIf="orden === 1"></i>
+         </th>
+         <th style="width: 150px;">estado</th>
+         <th>accion</th>
+       </tr>
+      </thead>
+      <tbody>
+       <tr class="table__row" *ngFor="let usuario of usersDB">
+         <td>{{usuario.nombre}}</td>
+         <td>
+           <p *ngIf="usuario.status == 'true'">Confirmado</p>
+           <p *ngIf="usuario.status == 'false'">No Confirmado</p>
+         </td>
+         <td>
+           <a class="pointer" title="Editar" (click)="editarInv(usuario._id,usuario.status,usuario.nombre)"><i class="fa fa-edit fa-2x"></i></a>
+           <a class="pointer" title="Eliminar" (click)="elimInv(usuario._id, usuario.nombre)"><i class="fas fa-times fa-2x"></i></a>
+         </td>
+         -->
+         <th>nombre
+            <i class="fa fa-arrow-up" ></i>
+            <i class="fa fa-arrow-down" ></i>
+         </th>
+         <th style="width: 150px;">estado</th>
+         <th>accion</th>
+       </tr>
+      </thead>
+      <tbody>
+       <tr class="table__row" *ngFor="">
+         <td>Nombre</td>
+         <td>
+           <p>Confirmado</p>
+         </td>
+         <td>
+           <a class="pointer" title="Editar"><i class="fa fa-edit fa-2x"></i></a>
+           <a class="pointer" title="Eliminar" ><i class="fas fa-times fa-2x"></i></a>
+         </td>
+       </tr>
+      </tbody>
+    </table>
+  </section>

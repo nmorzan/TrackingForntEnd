@@ -52,7 +52,10 @@ hr{
                     font-size: 13px;
                     font-weight: 600;
                 }
-
+                .data-register form span{
+                    color: red;
+                    font-weight: 600;
+                }
                 .data-register form input[type="email"],input[type="password"],input[type="text"],select{
                     padding: 5px;
                     font-size: 13px;

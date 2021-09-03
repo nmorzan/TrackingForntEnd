@@ -101,6 +101,10 @@ hr{
                 .data-login form .btn_Ingreso:hover{
                     box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.4);
                 }
+        .data-login form span{
+            color: red;
+            font-weight: 600;
+        }
 
         .data-register{
             height: 15vh;
