@@ -9,7 +9,7 @@ export class MenuService{
   constructor(){}
 
   public getMenu(role:String = "Productor"){
-    const menu:any[] = [];
+    const menu:any[] = [];    
     if(role == "Productor"){
       menu.push({
         router: "",
